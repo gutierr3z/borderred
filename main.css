@@ -184,7 +184,7 @@ main > section,
 footer > section {
     /* appearance */
     background-color: #ededed;
-    border: 1px solid green;
+    border: 1px solid orange;
 }
 
 header > section,
