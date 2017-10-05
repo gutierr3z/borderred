@@ -1,193 +1,300 @@
-body {
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Open Sans', 'sans-serif';
-}
+/*
+============================================================
+START : GENERAL : STRUCTURE
+*/
 
 html {
+    /* structure */
     height: 100%;
-    font-size: 14px;
 }
 
 body {
+    /* structure */
+    margin: 0px;
+    padding: 0px;
+    height: inherit;
     display: flex;
     min-height: 100%;
     flex-direction: column;
-    font-size: inherit;
-    -webkit-font-smoothing: antialiased;
 }
 
 header {
+    /* structure */
     height: 8vmax;
 }
 
 header * {
+    /* structure */
     height: inherit;
 }
 
 main {
+    /* structure */
     flex: 1;
 }
 
 header > section,
 main > section,
 footer > section {
+    /* structure */
     padding: 0px 3vmax;
-    background-color: #ccc;
-    border: 1px solid green;
 }
 
 header > section {
+    /* structure */
     padding-right: 0px;
 }
 
-footer > section {
-    background-color: #666;
-}
-
 footer > section > section {
+    /* structure */
     min-height: 12vmax;
 }
 
 header > section > section,
 main > section > section, 
 footer > section > section {
+    /* structure */
     max-width: 992px;
     min-width: 250px;
     margin: 0px auto;
-    background-color: #999;
-    border: 1px solid red;
 }
 
-/* END : PAGE LAYOUT */
-
 header > section > section > div > a {
+    /* structure */
     display: block;
     width: 15vmax;
     min-width: 150px;
     max-width: 300px;
-    border: 1px solid blue;
 }
-
-/* START : FONTS */
 
 h1, h2, h3, h4, h5, h6 {
     /* structure */
     margin-right: 0px;
     margin-left: 0px;
     padding: 0px;
-    /* fonts */
-    letter-spacing: -.03rem;
 }
 
 h1 {
     /* structure */
     margin-top: calc( 1.6rem + .3vmax );
     margin-bottom: calc( 1rem + .3vmax );
-    /* fonts */
-    font-size: calc( 2rem + .3vmax );
-    line-height: calc( 2rem + 1.5vmax );
 }
 
 h2 {
     /* structure */
     margin-top: calc( 1.4rem + .3vmax );
     margin-bottom: calc( .8rem + .3vmax );
-    /* fonts */
-    font-size: calc( 1.8rem + .3vmax );
-    line-height: calc( 1.8rem + 1.5vmax );
 }
 
 h3 {
     /* structure */
     margin-top: calc( 1.2rem + .3vmax );
     margin-bottom: calc( .6rem + .3vmax );
-    /* fonts */
-    font-size: calc( 1.6rem + .3vmax );
-    line-height: calc( 1.6rem + 1.5vmax );
 }
 
 h4 {
     /* structure */
     margin-top: calc( 1rem + .3vmax );
     margin-bottom: calc( .4rem + .3vmax );
-    /* fonts */
-    font-size: calc( 1.4rem + .3vmax );
-    line-height: calc( 1.4rem + 1.5vmax );
 }
 
 h5 {
     /* structure */
     margin-top: calc( .8rem + .3vmax );
     margin-bottom: calc( .2rem + .3vmax );
-    /* fonts */
-    font-size: calc( 1.2rem + .3vmax );
-    line-height: calc( 1.2rem + 1.5vmax );
 }
 
 h6 {
     /* structure */
     margin-top: calc( .6rem + .3vmax );
     margin-bottom: calc( .28rem + .3vmax );
+}
+
+/*
+END : GENERAL : STRUCTURE
+============================================================
+============================================================
+START : GENERAL : FONTS 
+*/
+
+html {
+    /* fonts */
+    font-size: 14px;
+}
+
+body {
+    /* fonts */
+    font-family: 'Open Sans', 'sans-serif';
+    font-size: inherit;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    /* fonts */
+    letter-spacing: -.03rem;
+}
+
+h1 {
+    /* fonts */
+    font-size: calc( 2rem + .3vmax );
+    line-height: calc( 2rem + 1.5vmax );
+}
+
+h2 {
+    /* fonts */
+    font-size: calc( 1.8rem + .3vmax );
+    line-height: calc( 1.8rem + 1.5vmax );
+}
+
+h3 {
+    /* fonts */
+    font-size: calc( 1.6rem + .3vmax );
+    line-height: calc( 1.6rem + 1.5vmax );
+}
+
+h4 {
+    /* fonts */
+    font-size: calc( 1.4rem + .3vmax );
+    line-height: calc( 1.4rem + 1.5vmax );
+}
+
+h5 {
+    /* fonts */
+    font-size: calc( 1.2rem + .3vmax );
+    line-height: calc( 1.2rem + 1.5vmax );
+}
+
+h6 {
     /* fonts */
     font-size: calc( 1rem + .3vmax );
     line-height: calc( 1rem + 1.5vmax );
 }
 
-/* END : FONTS */
 
+/*
+END : GENERAL : FONTS
+============================================================
+============================================================
+START : GENERAL : APPEARANCE 
+*/
+
+
+header > section,
+main > section,
+footer > section {
+    /* appearance */
+    background-color: #ccc;
+    border: 1px solid green;
+}
+
+footer > section {
+    /* appearance */
+    background-color: #666;
+}
+
+header > section > section,
+main > section > section, 
+footer > section > section {
+    /* appearance */
+    background-color: #999;
+    border: 1px solid red;
+}
+
+header > section > section > div > a {
+    /* appearance */
+    border: 1px solid blue;
+}
+
+/*
+END : GENERAL : APPEARANCE
+============================================================
+============================================================
+START : GALLERY : STRUCTURE 
+*/
 
 .br-gallery {
-    /* border: 1px solid red; */
+    /* structure */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .br-gallery:after {
+    /* structure */
     content: '';
     flex: 0 0 33%;
 }
 
 .br-gallery > * {
-    background-color: blue;
+    /* structure */
     flex: 0 0 33%;
-    /* height: 33%; */
     margin-bottom: .5vmax;
 }
 
 .br-gallery > * > * {
-    background-color: yellow;
+    /* structure */
     display: block;
     position: relative;
-    padding-bottom: 100%;
+    padding-bottom: 80%;
 }
 
 .br-gallery > * > * > * {
+    /* structure */
     height: 100%;
     width: 100%;
     position: absolute;
 }
 
 
+/*
+END : GALLERY : STRUCTURE
+============================================================
+============================================================
+START : GALLERY : APPEARANCE 
+*/
+
+.br-gallery > * {
+    /* appearance */
+    background-color: blue;
+}
+
+.br-gallery > * > * {
+    /* appearance */
+    background-color: yellow;
+}
+
+.br-gallery > * > * > * {
+    /* appearance */
+    background-color: pink;
+}
+
+/*
+END : GALLERY : APPEARANCE
+============================================================
+*/
+
 
 @media ( min-width: 768px ) {
 
     header {
+        /* structure */
         height: 8vmin;
     }
 
     footer > section > section {
+        /* structure */
         min-height: 12 vmin;
     }
 
     header > section,
     main > section,
     footer > section {
+        /* structure */
         padding: 0px 3vmin;
     }
 
     header > section > section > div > a {
+        /* structure */
         width: 25vmin;
     }
 
