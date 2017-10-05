@@ -183,20 +183,21 @@ header > section,
 main > section,
 footer > section {
     /* appearance */
-    background-color: #ccc;
+    background-color: #ededed;
     border: 1px solid green;
 }
 
+header > section,
 footer > section {
     /* appearance */
-    background-color: #666;
+    background-color: #e3e0d2;
 }
 
 header > section > section,
 main > section > section, 
 footer > section > section {
     /* appearance */
-    background-color: #999;
+    background-color: #d8d5c1;
     border: 1px solid red;
 }
 
@@ -260,12 +261,12 @@ START : GALLERY : APPEARANCE
 
 .br-gallery > * > * {
     /* appearance */
-    background-color: yellow;
+    background-color: pink;
 }
 
 .br-gallery > * > * > * {
     /* appearance */
-    background-color: pink;
+    background-color: yellow;
 }
 
 /*
