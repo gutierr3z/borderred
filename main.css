@@ -1,0 +1,243 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', 'sans-serif';
+}
+
+html {
+    height: 100%;
+    font-size: 14px;
+}
+
+body {
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
+    font-size: inherit;
+    -webkit-font-smoothing: antialiased;
+}
+
+header {
+    height: 8vmax;
+}
+
+header * {
+    height: inherit;
+}
+
+main {
+    flex: 1;
+}
+
+header > section,
+main > section,
+footer > section {
+    padding: 0px 3vmax;
+    background-color: #ccc;
+    border: 1px solid green;
+}
+
+header > section {
+    padding-right: 0px;
+}
+
+footer > section {
+    background-color: #666;
+}
+
+footer > section > section {
+    min-height: 12vmax;
+}
+
+header > section > section,
+main > section > section, 
+footer > section > section {
+    max-width: 992px;
+    min-width: 250px;
+    margin: 0px auto;
+    background-color: #999;
+    border: 1px solid red;
+}
+
+/* END : PAGE LAYOUT */
+
+header > section > section > div > a {
+    display: block;
+    width: 15vmax;
+    min-width: 150px;
+    max-width: 300px;
+    border: 1px solid blue;
+}
+
+/* START : FONTS */
+
+h1, h2, h3, h4, h5, h6 {
+    /* structure */
+    margin-right: 0px;
+    margin-left: 0px;
+    padding: 0px;
+    /* fonts */
+    letter-spacing: -.03rem;
+}
+
+h1 {
+    /* structure */
+    margin-top: calc( 1.6rem + .3vmax );
+    margin-bottom: calc( 1rem + .3vmax );
+    /* fonts */
+    font-size: calc( 2rem + .3vmax );
+    line-height: calc( 2rem + 1.5vmax );
+}
+
+h2 {
+    /* structure */
+    margin-top: calc( 1.4rem + .3vmax );
+    margin-bottom: calc( .8rem + .3vmax );
+    /* fonts */
+    font-size: calc( 1.8rem + .3vmax );
+    line-height: calc( 1.8rem + 1.5vmax );
+}
+
+h3 {
+    /* structure */
+    margin-top: calc( 1.2rem + .3vmax );
+    margin-bottom: calc( .6rem + .3vmax );
+    /* fonts */
+    font-size: calc( 1.6rem + .3vmax );
+    line-height: calc( 1.6rem + 1.5vmax );
+}
+
+h4 {
+    /* structure */
+    margin-top: calc( 1rem + .3vmax );
+    margin-bottom: calc( .4rem + .3vmax );
+    /* fonts */
+    font-size: calc( 1.4rem + .3vmax );
+    line-height: calc( 1.4rem + 1.5vmax );
+}
+
+h5 {
+    /* structure */
+    margin-top: calc( .8rem + .3vmax );
+    margin-bottom: calc( .2rem + .3vmax );
+    /* fonts */
+    font-size: calc( 1.2rem + .3vmax );
+    line-height: calc( 1.2rem + 1.5vmax );
+}
+
+h6 {
+    /* structure */
+    margin-top: calc( .6rem + .3vmax );
+    margin-bottom: calc( .28rem + .3vmax );
+    /* fonts */
+    font-size: calc( 1rem + .3vmax );
+    line-height: calc( 1rem + 1.5vmax );
+}
+
+/* END : FONTS */
+
+
+.br-gallery {
+    /* border: 1px solid red; */
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    height: 100%;
+    overflow: hidden;
+}
+
+.br-gallery > * {
+    background-color: blue;
+    float: left;
+    width: calc( ( 100% / 3 ) - .9% );
+    padding-bottom: calc( ( 100% / 3 ) - .9% );
+
+    margin: .4%;
+    position: relative;
+}
+
+.br-gallery > * > * {
+    background-color: yellow;
+    display: flex;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+
+@media ( min-width: 768px ) {
+
+    header {
+        height: 8vmin;
+    }
+
+    footer > section > section {
+        min-height: 12 vmin;
+    }
+
+    header > section,
+    main > section,
+    footer > section {
+        padding: 0px 3vmin;
+    }
+
+    header > section > section > div > a {
+        width: 25vmin;
+    }
+
+    h1 {
+        /* structure */
+        margin-top: calc( 1.6rem + .3vmin );
+        margin-bottom: calc( 1rem + .3vmin );
+        /* fonts */
+        font-size: calc( 2rem + .3vmin );
+        line-height: calc( 2rem + 1.5vmin );
+    }
+
+    h2 {
+        /* structure */
+        margin-top: calc( 1.4rem + .3vmin );
+        margin-bottom: calc( .8rem + .3vmin );
+        /* fonts */
+        font-size: calc( 1.8rem + .3vmin );
+        line-height: calc( 1.8rem + 1.5vmin );
+    }
+
+    h3 {
+        /* structure */
+        margin-top: calc( 1.2rem + .3vmin );
+        margin-bottom: calc( .6rem + .3vmin );
+        /* fonts */
+        font-size: calc( 1.6rem + .3vmin );
+        line-height: calc( 1.6rem + 1.5vmin );
+    }
+
+    h4 {
+        /* structure */
+        margin-top: calc( 1rem + .3vmin );
+        margin-bottom: calc( .4rem + .3vmin );
+        /* fonts */
+        font-size: calc( 1.4rem + .3vmin );
+        line-height: calc( 1.4rem + 1.5vmin );
+    }
+
+    h5 {
+        /* structure */
+        margin-top: calc( .8rem + .3vmin );
+        margin-bottom: calc( .2rem + .3vmin );
+        /* fonts */
+        font-size: calc( 1.2rem + .3vmin );
+        line-height: calc( 1.2rem + 1.5vmin );
+    }
+
+    h6 {
+        /* structure */
+        margin-top: calc( .6rem + .3vmin );
+        margin-bottom: calc( .28rem + .3vmin );
+        /* fonts */
+        font-size: calc( 1rem + .3vmin );
+        line-height: calc( 1rem + 1.5vmin );
+    }
+}
