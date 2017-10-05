@@ -139,31 +139,35 @@ h6 {
 
 .br-gallery {
     /* border: 1px solid red; */
-    /* display: flex; */
-    /* flex-wrap: wrap; */
-    height: 100%;
-    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.br-gallery:after {
+    content: '';
+    flex: 0 0 33%;
 }
 
 .br-gallery > * {
     background-color: blue;
-    float: left;
-    width: calc( ( 100% / 3 ) - .9% );
-    padding-bottom: calc( ( 100% / 3 ) - .9% );
-
-    margin: .4%;
-    position: relative;
+    flex: 0 0 33%;
+    /* height: 33%; */
+    margin-bottom: .5vmax;
 }
 
 .br-gallery > * > * {
     background-color: yellow;
-    display: flex;
-    position: absolute;
-    height: 100%;
-    width: 100%;
+    display: block;
+    position: relative;
+    padding-bottom: 100%;
 }
 
-
+.br-gallery > * > * > * {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
 
 
 
