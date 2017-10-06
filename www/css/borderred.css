@@ -204,7 +204,7 @@ header > section > section > div > a {
     /* appearance */
     border: 1px solid red;
     background: url( '../images/logo.svg' );
-    background-size: 75%;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: 0 center;
 }
