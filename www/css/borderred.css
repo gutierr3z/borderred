@@ -245,7 +245,6 @@ START : GALLERY : STRUCTURE
     position: absolute;
 }
 
-
 /*
 END : GALLERY : STRUCTURE
 ============================================================
@@ -272,7 +271,6 @@ START : GALLERY : APPEARANCE
 END : GALLERY : APPEARANCE
 ============================================================
 */
-
 
 @media ( min-width: 768px ) {
 
