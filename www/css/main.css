@@ -182,27 +182,27 @@ header > section,
 main > section,
 footer > section {
     /* appearance */
-    background-color: #ededed;
-    border: 1px solid orange;
+    background-color: #ead9d9;
+    border: 1px solid red;
 }
 
 header > section,
 footer > section {
     /* appearance */
-    background-color: #e3e0d2;
+    background-color: #e4c9c9;
 }
 
 header > section > section,
 main > section > section, 
 footer > section > section {
     /* appearance */
-    background-color: #d8d5c1;
+    background-color: #dbb7b7;
     border: 1px solid red;
 }
 
 header > section > section > div > a {
     /* appearance */
-    border: 1px solid blue;
+    border: 1px solid red;
 }
 
 /*
@@ -255,17 +255,17 @@ START : GALLERY : APPEARANCE
 
 .br-gallery > * {
     /* appearance */
-    background-color: blue;
+    background-color: #da8686;
 }
 
 .br-gallery > * > * {
     /* appearance */
-    background-color: pink;
+    background-color: #d89494;
 }
 
 .br-gallery > * > * > * {
     /* appearance */
-    background-color: yellow;
+    background-color: #d6a3a3;
 }
 
 /*
