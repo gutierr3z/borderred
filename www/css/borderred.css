@@ -391,11 +391,6 @@ END : GALLERY : APPEARANCE
         height: 15vmin;
     }
 
-    footer > section > section {
-        /* structure */
-        min-height: 12vmin;
-    }
-
     header > section > section > div > a {
         /* structure */
         width: 25vmin;
