@@ -29,19 +29,9 @@ main {
     flex: 1;
 }
 
-footer {
-    /* structure */
-    height: 15vmax;
-}
-
 header * {
     /* structure */
     height: inherit;
-}
-
-header > section {
-    /* structure */
-    padding-right: 0px;
 }
 
 header > section,
@@ -49,6 +39,20 @@ main > section,
 footer > section {
     /* structure */
     padding: 0px 3vmax;
+}
+
+main > section:last-of-type {
+    padding-bottom: 5vmax;
+}
+
+header > section {
+    /* structure */
+    padding-right: 0px;
+}
+
+footer > section {
+    /* structure */
+    height: 15vmax;
 }
 
 header > section > section,
@@ -60,6 +64,10 @@ footer > section > section {
     margin: 0px auto;
     padding-top: 1px;
     padding-bottom: 1px;
+}
+
+footer > section > section {
+    padding-top: 2vmax;
 }
 
 header > section > section > div > a {
@@ -192,36 +200,36 @@ body {
     color: #474747;
 }
 
-footer {
-    /* appearance */
-    background-color: orange
-}
-
-header > section,
-footer > section {
-    /* appearance */
-    background-color: #e4c9c9;
-}
-
 header > section,
 main > section,
 footer > section {
     /* appearance */
-    background-color: #ead9d9;
-    /* border: 1px solid red; */
+    background-color: #eaeaea;
+    border: 1px solid red;
+}
+
+header > section,
+footer > section {
+    /* appearance */
+    background-color: #d7d7d7;
 }
 
 header > section > section,
 main > section > section, 
 footer > section > section {
     /* appearance */
-    background-color: #dbb7b7;
-    /* border: 1px solid red; */
+    background-color: #f1f1f1;
+}
+
+header > section > section,
+footer > section > section {
+    /* appearance */
+    background-color: #c9c9c9;
 }
 
 header > section > section > div > a {
     /* appearance */
-    border: 1px solid red;
+    background-color: #b8b8b8;
     /* background: url( '../images/logo.svg' ); */
     background-size: 100%;
     background-repeat: no-repeat;
@@ -280,19 +288,24 @@ END : GALLERY : STRUCTURE
 START : GALLERY : APPEARANCE 
 */
 
+.br-gallery {
+    /* appearance */
+    background-color: #fff;
+}
+
 .br-gallery > * {
     /* appearance */
-    background-color: #da8686;
+    background-color: #f1f1f1;
 }
 
 .br-gallery > * > * {
     /* appearance */
-    background-color: #d89494;
+    background-color: #f1f1f1;
 }
 
 .br-gallery > * > * > * {
     /* appearance */
-    background-color: #d6a3a3;
+    background-color: #f1f1f1;
 }
 
 /*
@@ -307,11 +320,6 @@ END : GALLERY : APPEARANCE
         height: 8vmin;
     }
 
-    footer {
-        /* structure */
-        height: 15vmin;
-    }
-
     header > section,
     main > section,
     footer > section {
@@ -319,9 +327,18 @@ END : GALLERY : APPEARANCE
         padding: 0px 3vmin;
     }
 
+    main > section:last-of-type {
+        padding-bottom: 5vmin;
+    }
+
+    footer > section {
+        /* structure */
+        height: 15vmin;
+    }
+
     footer > section > section {
         /* structure */
-        min-height: 12 vmin;
+        min-height: 12vmin;
     }
 
     header > section > section > div > a {
