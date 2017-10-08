@@ -63,6 +63,11 @@ body {
     flex-direction: column;
 }
 
+article {
+    /* structure */
+    padding: 0px 1vmax;
+}
+
 p {
     /* structure */
     margin: 1.5rem 0px;
@@ -379,6 +384,11 @@ END : GALLERY : APPEARANCE
 }
 
 @media ( min-width: 768px ) {
+
+    article {
+        /* structure */
+        padding: 0px 20vmin;
+    }
 
     header {
         /* structure */
