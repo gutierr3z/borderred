@@ -258,12 +258,12 @@ START : GALLERY : STRUCTURE
 .br-gallery:after {
     /* structure */
     content: '';
-    flex: 0 0 33%;
+    flex: 0 0 49.5%;          /* 2 slides per row */
 }
 
 .br-gallery > * {
     /* structure */
-    flex: 0 0 33%;
+    flex: 0 0 49.5%;          /* 2 slides per row */
     margin-bottom: .5vmax;
 }
 
@@ -344,6 +344,16 @@ END : GALLERY : APPEARANCE
     header > section > section > div > a {
         /* structure */
         width: 25vmin;
+    }
+
+    .br-gallery:after {
+        /* structure */
+        flex: 0 0 33%;          /* 3 slides per row */
+    }
+    
+    .br-gallery > * {
+        /* structure */
+        flex: 0 0 33%;          /* 3 slides per row */
     }
 
     h1 {
