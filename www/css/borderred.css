@@ -316,6 +316,14 @@ END : GALLERY : APPEARANCE
 ============================================================
 */
 
+@media ( min-width: 568px ) {
+
+    .br-gallery:after,
+    .br-gallery > * {
+        flex: 0 0 33%;        /* 3 slides per row */
+    }
+}
+
 @media ( min-width: 768px ) {
 
     header {
@@ -351,7 +359,7 @@ END : GALLERY : APPEARANCE
 
     .br-gallery:after,
     .br-gallery > * {
-        flex: 0 0 33%;        /* 3 slides per row */
+        flex: 0 0 24.7%;        /* 4 slides per row */
     }
 
     h1 {
