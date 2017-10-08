@@ -24,24 +24,14 @@ header {
     height: 8vmax;
 }
 
-main {
-    /* structure */
-    flex: 1;
-}
-
-footer {
-    /* structure */
-    height: 15vmax;
-}
-
 header * {
     /* structure */
     height: inherit;
 }
 
-header > section {
+main {
     /* structure */
-    padding-right: 0px;
+    flex: 1;
 }
 
 header > section,
@@ -51,6 +41,16 @@ footer > section {
     padding: 0px 3vmax;
 }
 
+header > section {
+    /* structure */
+    padding-right: 0px;
+}
+
+footer {
+    /* structure */
+    height: 15vmax;
+}
+
 header > section > section,
 main > section > section, 
 footer > section > section {
@@ -58,8 +58,6 @@ footer > section > section {
     max-width: 992px;
     min-width: 250px;
     margin: 0px auto;
-    padding-top: 1px;
-    padding-bottom: 1px;
 }
 
 header > section > section > div > a {
@@ -79,37 +77,37 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     /* structure */
-    margin-top: 1.8rem;
+    margin-top: calc( 1.6rem + .3vmax );
     margin-bottom: 1rem;
 }
 
 h2 {
     /* structure */
-    margin-top: 1.6rem;
+    margin-top: calc( 1.4rem + .3vmax );
     margin-bottom: .8rem;
 }
 
 h3 {
     /* structure */
-    margin-top: 1.4rem;
+    margin-top: calc( 1.2rem + .3vmax );
     margin-bottom: .6rem;
 }
 
 h4 {
     /* structure */
-    margin-top: 1.2rem;
+    margin-top: calc( 1rem + .3vmax );
     margin-bottom: .4rem;
 }
 
 h5 {
     /* structure */
-    margin-top: 1rem;
+    margin-top: calc( .8rem + .3vmax );
     margin-bottom: .2rem;
 }
 
 h6 {
     /* structure */
-    margin-top: .8rem;
+    margin-top: calc( .6rem + .3vmax );
     margin-bottom: 0rem;
 }
 
@@ -127,56 +125,63 @@ html {
 
 body {
     /* fonts */
+    /* font-family: 'Open Sans', 'sans-serif'; */
     font-family: 'Karla', sans-serif;
+    font-size: inherit;
     -webkit-font-smoothing: antialiased;
+
     font-size: 1.1rem;
     letter-spacing: -0.9px;
     line-height: 1.7rem;
     font-weight: 100;
+    color: #474747;
 
 }
 
 h1, h2, h3, h4, h5, h6 {
     /* fonts */
     letter-spacing: 0rem;
+    /* font-family: 'Catamaran', sans-serif; */
     font-family: 'Mukta', sans-serif;
+    font-weight: 400;
     font-weight: bold; 
+    line-height: 2rem;
 }
 
 h1 {
     /* fonts */
     font-size: calc( 2rem + .3vmax );
-    line-height: 2.2rem;
+    /* line-height: calc( 2rem + 1.5vmax ); */
 }
 
 h2 {
     /* fonts */
     font-size: calc( 1.8rem + .3vmax );
-    line-height: 2rem;
+    /* line-height: calc( 1.8rem + 1.5vmax ); */
 }
 
 h3 {
     /* fonts */
     font-size: calc( 1.6rem + .3vmax );
-    line-height: 1.8rem;
+    /* line-height: calc( 1.6rem + 1.5vmax ); */
 }
 
 h4 {
     /* fonts */
     font-size: calc( 1.4rem + .3vmax );
-    line-height: 1.6rem;
+    /* line-height: calc( 1.4rem + 1.5vmax ); */
 }
 
 h5 {
     /* fonts */
     font-size: calc( 1.2rem + .3vmax );
-    line-height: 1.4rem;
+    /* line-height: calc( 1.2rem + 1.5vmax ); */
 }
 
 h6 {
     /* fonts */
     font-size: calc( 1rem + .3vmax );
-    line-height: 1.2rem;
+    /* line-height: calc( 1rem + 1.5vmax ); */
 }
 
 
@@ -187,14 +192,17 @@ END : GENERAL : FONTS
 START : GENERAL : APPEARANCE 
 */
 
-body {
-    /* appearance */
-    color: #474747;
-}
-
 footer {
     /* appearance */
     background-color: orange
+}
+
+header > section,
+main > section,
+footer > section {
+    /* appearance */
+    background-color: #fff;
+    /* border: 1px solid red; */
 }
 
 header > section,
@@ -203,19 +211,11 @@ footer > section {
     background-color: #e4c9c9;
 }
 
-header > section,
-main > section,
-footer > section {
-    /* appearance */
-    background-color: #ead9d9;
-    /* border: 1px solid red; */
-}
-
 header > section > section,
 main > section > section, 
 footer > section > section {
     /* appearance */
-    background-color: #dbb7b7;
+    background-color: #fff;
     /* border: 1px solid red; */
 }
 
@@ -226,11 +226,6 @@ header > section > section > div > a {
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: 0 center;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    /* appearance */
-    color: #242424;
 }
 
 /*
@@ -312,16 +307,16 @@ END : GALLERY : APPEARANCE
         height: 15vmin;
     }
 
+    footer > section > section {
+        /* structure */
+        min-height: 12 vmin;
+    }
+
     header > section,
     main > section,
     footer > section {
         /* structure */
         padding: 0px 3vmin;
-    }
-
-    footer > section > section {
-        /* structure */
-        min-height: 12 vmin;
     }
 
     header > section > section > div > a {
@@ -330,32 +325,56 @@ END : GALLERY : APPEARANCE
     }
 
     h1 {
+        /* structure */
+        margin-top: calc( 1.6rem + .3vmin );
+        /* margin-bottom: calc( 1rem + .3vmin ); */
         /* fonts */
         font-size: calc( 2rem + .3vmin );
+        /* line-height: calc( 2rem + 1.5vmin ); */
     }
 
     h2 {
+        /* structure */
+        margin-top: calc( 1.4rem + .3vmin );
+        /* margin-bottom: calc( .8rem + .3vmin ); */
         /* fonts */
         font-size: calc( 1.8rem + .3vmin );
+        /* line-height: calc( 1.8rem + 1.5vmin ); */
     }
 
     h3 {
+        /* structure */
+        margin-top: calc( 1.2rem + .3vmin );
+        /* margin-bottom: calc( .6rem + .3vmin ); */
         /* fonts */
         font-size: calc( 1.6rem + .3vmin );
+        /* line-height: calc( 1.6rem + 1.5vmin ); */
     }
 
     h4 {
+        /* structure */
+        margin-top: calc( 1rem + .3vmin );
+        /* margin-bottom: calc( .4rem + .3vmin ); */
         /* fonts */
         font-size: calc( 1.4rem + .3vmin );
+        /* line-height: calc( 1.4rem + 1.5vmin ); */
     }
 
     h5 {
+        /* structure */
+        margin-top: calc( .8rem + .3vmin );
+        /* margin-bottom: calc( .2rem + .3vmin ); */
         /* fonts */
         font-size: calc( 1.2rem + .3vmin );
+        /* line-height: calc( 1.2rem + 1.5vmin ); */
     }
 
     h6 {
+        /* structure */
+        margin-top: calc( .6rem + .3vmin );
+        /* margin-bottom: calc( .28rem + .3vmin ); */
         /* fonts */
         font-size: calc( 1rem + .3vmin );
+        /* line-height: calc( 1rem + 1.5vmin ); */
     }
 }
